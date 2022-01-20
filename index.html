@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- code by @itz_pa1(github) -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Skranji&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" type="image/svg">
+    <title>WhatsDM</title>
+</head>
+
+<body onload="loading()">
+    <div class="loading-scrn" id="load">
+        <div class="mid">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" id="logo">
+            <p>WhatsDM</p>
+        </div>
+        <div class="footer">
+            <span>from<a href="https://github.com/itzpa1/">itz_pa1</a>
+            </span>
+        </div>
+    </div>
+    <div class="wrapper" id="wrapper">
+        <div class="header">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" id="logo">
+            <a href="#" id="title">WhatsDM</a>
+            <select name="" id="lang">
+                <option value="eng" selected>English</option>
+                <option value="hin">Hindi</option>
+                <option value="loc">Local</option>
+            </select>
+        </div>
+        <div class="container">
+            <div class="dm">
+                <p class="txt">Send a Whatsapp Direct Msg without adding to your contact list</p>
+                <div class="input">
+                    <select name="" id="Ncode">
+                        <option value="1">+1</option>
+                        <option value="91" selected>+91</option>
+                        <option value="92">+92</option>
+                        <option value="977">+977</option>
+                        <option value="82">+82</option>
+                        <option value="">Other</option>
+                    </select>
+                    <input type="number" id="number" placeholder="Mobile Number" required>
+                    <input type="button" value="DM" id="btn" onclick="w()">
+                </div>
+            </div>
+            <div class="uses">
+                <p>Just select the country code and fill in the Mobile number.
+                    Click on DM. <br><u id="note">Note :Country code which are not mentioned enter that number with country code and remove + sign.</u></p>
+                <a href="whatsapp://send?text=WhatsDM - lets you send Whatsapp messages to unknown contacts. Visit : https://whatsdm.blogspot.com">Share</a>
+                <h6>Sometimes we want to send a Whatsapp message without going to the
+                    trouble of adding someone to our contacts or saving their number in
+                    our Contacts. You just don't want to bloat your contacts list with
+                    everyone you ever have sent a Whatsapp message. This service is for you:
+                    <u>WhatsDM - lets you send Whatsapp messages to unknown contacts.</u>
+                </h6>
+            </div>
+        </div>
+        <div class="copyrights">
+            <p>&copy; 2021 itzpa1 <br> Privacy: No cookies are used. Mobile numbers are
+                not stored by us. Mobile numbers are sent directly to the Whatsapp servers.
+                <b>This service is not associated with Meta, Facebook or Whatsapp in any way.</b>
+            </p>
+            <img src="https://scontent.whatsapp.net/v/t39.8562-34/192421540_142194574611525_6595584605694964777_n.png?ccb=1-5&_nc_sid=2fbf2a&_nc_ohc=lc15aYKK_i4AX-bGFYH&_nc_ht=scontent.whatsapp.net&oh=01_AVyh2XUJbuuac1TkYaFUDW-gbdAFWppaFDW-vqnqPGKT2A&oe=61EC0C2A" id="r">
+            <img src="https://scontent.whatsapp.net/v/t39.8562-34/193389815_153710126736438_1869555250439072017_n.png?ccb=1-5&_nc_sid=2fbf2a&_nc_ohc=7pvroq0zXZIAX_ZcWDn&_nc_ht=scontent.whatsapp.net&oh=01_AVxNtZD3PMiKqianqxlIobuLdjU7QAyr8YRHX8ThaCGiTw&oe=61ECCF78" id="l">
+            <a href="https://github.com/itzpa1/" id="contact">Contact Us</a>
+        </div>
+    </div>
+</body>
+<script>
+
+function w() {
+    var number = document.getElementById('number').value;
+    var x = document.getElementById('Ncode');
+    var y = x.options[x.selectedIndex].value;
+    window.location.href = 'https://wa.me/' + y + number;
+}
+
+// ---------loading-scrn---------
+
+var load;
+
+function loading() {
+    load = setTimeout(show, 2000);
+}
+
+function show() {
+    document.getElementById('load').style.display = "none";
+    document.getElementById('wrapper').style.display = "block";
+}
+
+</script>
+</html>
