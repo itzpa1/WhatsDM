@@ -11,4 +11,4 @@ WhatsDM - lets you send Whatsapp messages to unknown contacts.
 Don't forget to join the channel for more videos like this.
 [Itzpa1 Studio](https://www.youtube.com/channel/UCXCHKYOoE_Pa5DulVsy9uA)
 
-![preview img](/preview.png)
+![preview img](/whatsdm.PNG)
